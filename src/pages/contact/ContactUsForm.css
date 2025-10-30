@@ -30,3 +30,27 @@
   display: flex;
   gap: 10px;
 }
+
+.contact-us-form-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-us-submit-button {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #3c5daa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-us-submit-button:hover {
+  background-color: #2a3e7a;
+}
+
+.contact-us-submit-button:active {
+  background-color: #1a2a5a;
+}

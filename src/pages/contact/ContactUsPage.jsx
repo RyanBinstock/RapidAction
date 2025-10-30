@@ -9,7 +9,7 @@ export function ContactUsPage() {
       <div className="contact-page">
         <div className="content">
           <div className="contact-page-title">Contact Us</div>
-          <h3>Have questions or just want more info? Reach out here!</h3>
+
           <ContactUsForm />
         </div>
       </div>
