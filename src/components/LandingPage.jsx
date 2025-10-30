@@ -1,8 +1,14 @@
 import "./LandingPage.css";
 
-export function LandingPage() {
+export function LandingPage({ stepSectionRef }) {
+  const handleClick = () => {
+    if (stepSectionRef.current) {
+      stepSectionRef.current.scrollIntoView({ behavior: "smooth" }); // 'smooth' for animated scroll
+    }
+  };
+
   return (
-    <div className="landing-page">
+    <div className="landing-page" ref={stepSectionRef}>
       <div className="content-title">
         <h1>The New Way</h1>
         <h1>to Play.</h1>
@@ -11,7 +17,8 @@ export function LandingPage() {
         A platform to book competitive sport matches, track every result, and
         climb the ranks in real time
       </p>
-      <button className="get-started-button">
+      <button className="get-started-button" onClick={handleClick}>
+        {" "}
         How Does It Work? <span className="dot"></span>
       </button>
     </div>

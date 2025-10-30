@@ -1,13 +1,17 @@
 .header-container {
   background-color: white;
   display: flex;
-  gap: 500px;
   height: 80px;
   padding: 0 20px;
   position: sticky;
   top: 0;
 }
 
+@media (min-width: 768) {
+  .header-container {
+    gap: 500px;
+  }
+}
 .header-logo {
   height: 100%;
   border-radius: 10px;

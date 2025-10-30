@@ -1,6 +1,6 @@
 import "./StepsSection.css";
 
-export function StepsSection() {
+export function StepsSection({ stepSectionRef }) {
   const steps = [
     {
       number: "1",
@@ -23,7 +23,7 @@ export function StepsSection() {
   ];
 
   return (
-    <div className="steps-section">
+    <div className="steps-section" ref={stepSectionRef}>
       {steps.map((step) => (
         <div
           key={step.number}
