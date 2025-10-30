@@ -3,7 +3,7 @@ import "./LandingPage.css";
 export function LandingPage({ stepSectionRef }) {
   const handleClick = () => {
     if (stepSectionRef.current) {
-      stepSectionRef.current.scrollIntoView({ behavior: "smooth" }); // 'smooth' for animated scroll
+      stepSectionRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 

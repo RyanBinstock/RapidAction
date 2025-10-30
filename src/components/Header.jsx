@@ -29,7 +29,11 @@ export function Header() {
             About
           </NavLink>
         </div>
-        <div className="header-navigate-button">Contact</div>
+        <div className="header-navigate-button">
+          <NavLink to="/contact-us" className="header-link">
+            Contact
+          </NavLink>
+        </div>
       </div>
     </div>
   );
