@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import "./Header.css";
 
 export function Header() {
@@ -11,12 +12,24 @@ export function Header() {
         />
       </div>
       <div className="right-section">
-        <div className="header-link">Home</div>
-        <div className="header-link">Process</div>
-        <div className="header-link">Play</div>
-        <div className="header-link">Leaderboards</div>
-        <div className="header-link">About</div>
-        <div className="header-link">Contact</div>
+        <div className="header-navigate-button">
+          <NavLink to="/" className="header-link">
+            Home
+          </NavLink>
+        </div>
+        <div className="header-navigate-button">
+          <NavLink to="/process" className="header-link">
+            Process
+          </NavLink>
+        </div>
+        <div className="header-navigate-button">Play</div>
+        <div className="header-navigate-button">Leaderboards</div>
+        <div className="header-navigate-button">
+          <NavLink to="/about" className="header-link">
+            About
+          </NavLink>
+        </div>
+        <div className="header-navigate-button">Contact</div>
       </div>
     </div>
   );

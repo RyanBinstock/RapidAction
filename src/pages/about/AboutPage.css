@@ -1,0 +1,45 @@
+.about-page {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #3c5daa, #099e3b);
+  color: #ffffff;
+  padding: 0 10vw;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Title */
+.about-page-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Paragraph container */
+.about-page-content {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .about-page-title {
+    font-size: 3rem;
+  }
+
+  .about-page-content {
+    font-size: 1.1rem;
+    padding: 0 5vw;
+  }
+}
